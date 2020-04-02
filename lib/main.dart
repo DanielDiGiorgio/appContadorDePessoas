@@ -19,10 +19,12 @@ class _HomeState extends State<Home> {
 
       if (_people < 1) {
         _infoText = "Restaurante Vazio.";
+        _people = 0;
       } else if (_people <= 10) {
         _infoText = "Pode entrar!";
       } else {
         _infoText = "Lotado!";
+        _people = 10;
       }
     });
   }
